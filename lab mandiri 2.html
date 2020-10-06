@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <p>Silahkan input nomor antara 1 dan 10:</p>
+    <input id="numb">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"><p>
+    <script>        
+        function myFunction() {
+        var number = document.getElementById("numb").value;
+        var pesan ="";
+
+        if(number>=1 && number<=10){
+                    for(var i=0; i<5; i++){
+                        pesan += "Input yang Anda masukkan benar</br>";    
+                    }
+                }else{
+                    for(var i=0; i<5; i++){
+                        pesan += "Input yang Anda masukkan Salah</br>";    
+                    }
+                }
+                document.getElementById("demo").innerHTML = pesan;
+        }
+    </script>
+</body>
+</html>
